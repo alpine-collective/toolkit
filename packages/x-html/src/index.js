@@ -1,6 +1,6 @@
 export default function (Alpine) {
     Alpine.directive('html', (el, { modifiers, expression }, { effect, evaluateLater }) => {
-        let getHtml = evaluateLater(expression);
+        const getHtml = evaluateLater(expression)
 
         effect(() => {
             getHtml(html => {
