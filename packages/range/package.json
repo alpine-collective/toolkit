@@ -1,0 +1,4 @@
+{
+    "name": "@alpine-collective/toolkit-range",
+    "description": "Generate an array containing a range of elements in Alpine.js."
+}

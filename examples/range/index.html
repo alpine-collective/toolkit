@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpine.js Toolkit - $range</title>
+    <script type="module">
+        import Range from '/packages/range/src/index.js'
+
+        document.addEventListener('alpine:initializing', () => {
+            Range(window.Alpine)
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine-next/packages/alpinejs/dist/cdn.min.js" defer></script>
+</head>
+<body>
+    <div x-data>
+        Normal - 1 through 5
+        <template x-for="i in $range(1, 5)">
+            <span x-text="i"></span>
+        </template>
+    </div>
+
+    <div x-data>
+        Reverse - 5 through 1
+        <template x-for="i in $range(5, 1)">
+            <span x-text="i"></span>
+        </template>
+    </div>
+
+    <div x-data>
+        Step by 2 - 1 through 9
+        <template x-for="i in $range(1, 9, 2)">
+            <span x-text="i"></span>
+        </template>
+    </div>
+</body>
+</html>
