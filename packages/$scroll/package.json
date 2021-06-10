@@ -1,6 +1,8 @@
 {
     "name": "@alpine-collective/toolkit-scroll",
     "description": "A $scroll helper for Alpine V3",
+    "main": "dist/module.cjs.js",
+    "module": "dist/module.esm.js",
     "devDependencies": {
         "smoothscroll-polyfill": "^0.4.4"
     }

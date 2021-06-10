@@ -1,4 +1,6 @@
 {
     "name": "@alpine-collective/toolkit-truncate",
-    "description": "Truncate a string in Alpine.js."
+    "description": "Truncate a string in Alpine.js.",
+    "main": "dist/module.cjs.js",
+    "module": "dist/module.esm.js"
 }
