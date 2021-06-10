@@ -1,0 +1,7 @@
+{
+    "name": "@alpine-collective/toolkit-scroll",
+    "description": "A $scroll helper for Alpine V3",
+    "devDependencies": {
+        "smoothscroll-polyfill": "^0.4.4"
+    }
+}
