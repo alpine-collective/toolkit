@@ -20,5 +20,13 @@
         <div><textarea x-model="code"></textarea></div>
         <div x-html="code"></div>
     </div>
+
+    <div x-data="{ code: '<script>alert(\'If you see this, it worked!\')</script>' }">
+        <strong>Unsafe HTML</strong>
+        <div>
+            <textarea x-model="code"></textarea>
+        </div>
+        <div x-html.unsafe="code"></div>
+    </div>
 </body>
 </html>
