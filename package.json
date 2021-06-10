@@ -4,6 +4,7 @@
         "packages/*"
     ],
     "devDependencies": {
+        "brotli-size": "^4.0.0",
         "esbuild": "^0.8.39",
         "eslint": "^7.22.0",
         "eslint-config-standard": "^16.0.2",
@@ -15,6 +16,7 @@
     },
     "scripts": {
         "build": "node ./scripts/build.js",
+        "watch": "node ./scripts/build.js --watch",
         "lint": "eslint .",
         "lint-fix": "eslint . --fix"
     }
