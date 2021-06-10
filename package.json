@@ -1,0 +1,10 @@
+{
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
+    "devDependencies": {
+        "esbuild": "^0.8.39"
+    },
+    "scripts": {}
+}
