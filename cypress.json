@@ -1,0 +1,12 @@
+{
+  "video": false,
+  "pluginsFile": false,
+  "screenshotOnRunFailure": false,
+  "fixturesFolder": "tests/fixtures",
+  "integrationFolder": "tests/integration",
+  "pluginsFile": "tests/plugins/index.js",
+  "screenshotsFolder": "tests/screenshots",
+  "videosFolder": "tests/videos",
+  "supportFile": "tests/bootstrap.js",
+  "baseUrl": "http://localhost:8080"
+}

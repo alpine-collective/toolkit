@@ -9,7 +9,7 @@
             Scroll(window.Alpine)
         })
     </script>
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine-next/packages/alpinejs/dist/cdn.min.js" defer></script>
+    <script src="/node_modules/alpinejs/dist/cdn.min.js" defer></script>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
@@ -31,9 +31,9 @@
         </p>
 
         <p class="mt-4 font-bold">You can scroll to a specific coordinate</p>
-        <button x-data class="block w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" x-data x-on:click="$scroll(0)">Scroll to top</button>
+        <button id="btn1" class="block w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" x-data x-on:click="$scroll(0)">Scroll to top</button>
 
         <p class="mt-4 font-bold">You can disable to smooth scrolling</p>
-        <button x-data class="block w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" x-data x-on:click="$scroll(0, {behavior: 'auto'})">Scroll to top (snap)</button>
-</div>
+        <button class="block w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" x-data x-on:click="$scroll(0, {behavior: 'auto'})">Scroll to top (snap)</button>
+    </div>
 </body>
