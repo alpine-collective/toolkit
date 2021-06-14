@@ -1,0 +1,6 @@
+{
+    "name": "@alpine-collective/toolkit-dbg",
+    "description": "A magic function to assist in debugging Alpine.js components.",
+    "main": "dist/module.cjs.js",
+    "module": "dist/module.esm.js"
+}

@@ -5,6 +5,7 @@ let brotliSize = require('brotli-size');
     '$range',
     '$truncate',
     '$scroll',
+    '$dbg',
     'x-html',
 ]).forEach(package => {
     if (! fs.existsSync(`./packages/${package}/dist`)) {
