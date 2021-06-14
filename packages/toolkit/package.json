@@ -1,0 +1,6 @@
+{
+    "name": "@alpine-collective/toolkit",
+    "description": "A set of directives and magic properties for Alpine.js.",
+    "main": "dist/module.cjs.js",
+    "module": "dist/module.esm.js"
+}
