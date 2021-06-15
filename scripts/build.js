@@ -3,6 +3,7 @@ let brotliSize = require('brotli-size');
 
 ([
     'toolkit',
+    '$root',
     '$range',
     '$truncate',
     '$scroll',

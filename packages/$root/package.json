@@ -1,0 +1,6 @@
+{
+    "name": "@alpine-collective/toolkit-root",
+    "description": "Easily retrieve the closest root element in your Alpine.js components.",
+    "main": "dist/module.cjs.js",
+    "module": "dist/module.esm.js"
+}
