@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpine.js Toolkit - $root</title>
+    <script type="module">
+        import Root from '/packages/$root/dist/module.esm.js'
+
+        document.addEventListener('alpine:initializing', () => {
+            Root(window.Alpine)
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine-next/packages/alpinejs/dist/cdn.min.js" defer></script>
+</head>
+<body>
+    <div x-data data-foo="bar">
+        <button @click="$root.setAttribute('data-foo', 'baz')">Set $root data-foo to baz</button>
+    </div>
+</body>
+</html>
