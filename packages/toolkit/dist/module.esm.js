@@ -341,17 +341,25 @@ var nodeScriptReplace = function(node) {
   return node;
 };
 
-// packages/toolkit/src/index.js
+// packages/$root/src/index.js
 function src_default6(Alpine) {
+  Alpine.magic("root", (el, {Alpine: Alpine2}) => {
+    return Alpine2.closestRoot(el);
+  });
+}
+
+// packages/toolkit/src/index.js
+function src_default7(Alpine) {
   src_default(Alpine);
   src_default2(Alpine);
   src_default3(Alpine);
   src_default4(Alpine);
   src_default5(Alpine);
+  src_default6(Alpine);
 }
 
 // packages/toolkit/builds/module.js
-var module_default = src_default6;
+var module_default = src_default7;
 export {
   module_default as default
 };

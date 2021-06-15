@@ -3,6 +3,7 @@ import Scroll from '../../$scroll/src/index'
 import Truncate from '../../$truncate/src/index'
 import Dbg from '../../$dbg/src/index'
 import Html from '../../x-html/src/index'
+import Root from '../../$root/src/index'
 
 export default function (Alpine) {
     Range(Alpine)
@@ -10,4 +11,5 @@ export default function (Alpine) {
     Truncate(Alpine)
     Dbg(Alpine)
     Html(Alpine)
+    Root(Alpine)
 }
