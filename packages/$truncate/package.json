@@ -1,6 +1,16 @@
 {
     "name": "@alpine-collective/toolkit-truncate",
+    "version": "1.0.0",
+    "author": "Alpine Collective",
+    "license": "MIT",
     "description": "Truncate a string in Alpine.js.",
     "main": "dist/module.cjs.js",
-    "module": "dist/module.esm.js"
+    "module": "dist/module.esm.js",
+    "unpkg": "dist/cdn.min.js",
+    "files": [
+        "dist/cdn.js",
+        "dist/cdn.min.js",
+        "dist/module.cjs.js",
+        "dist/module.esm.js"
+    ]
 }

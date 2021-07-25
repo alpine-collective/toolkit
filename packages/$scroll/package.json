@@ -9,5 +9,11 @@
     "unpkg": "dist/cdn.min.js",
     "devDependencies": {
         "smoothscroll-polyfill": "^0.4.4"
-    }
+    },
+    "files": [
+        "dist/cdn.js",
+        "dist/cdn.min.js",
+        "dist/module.cjs.js",
+        "dist/module.esm.js"
+    ]
 }

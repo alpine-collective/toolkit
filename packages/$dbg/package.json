@@ -1,6 +1,16 @@
 {
     "name": "@alpine-collective/toolkit-dbg",
+    "version": "1.0.0",
+    "author": "Alpine Collective",
+    "license": "MIT",
     "description": "A magic function to assist in debugging Alpine.js components.",
     "main": "dist/module.cjs.js",
-    "module": "dist/module.esm.js"
+    "module": "dist/module.esm.js",
+    "unpkg": "dist/cdn.min.js",
+    "files": [
+        "dist/cdn.js",
+        "dist/cdn.min.js",
+        "dist/module.cjs.js",
+        "dist/module.esm.js"
+    ]
 }
