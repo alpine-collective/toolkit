@@ -1,0 +1,16 @@
+{
+    "name": "@alpine-collective/toolkit-screen",
+    "version": "1.0.0",
+    "author": "Alpine Collective",
+    "license": "MIT",
+    "description": "Alpine magic helper to detect if the current browser width is equal or greater than a given breakpoint.",
+    "main": "dist/module.cjs.js",
+    "module": "dist/module.esm.js",
+    "unpkg": "dist/cdn.min.js",
+    "files": [
+        "dist/cdn.js",
+        "dist/cdn.min.js",
+        "dist/module.cjs.js",
+        "dist/module.esm.js"
+    ]
+}

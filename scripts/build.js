@@ -6,6 +6,7 @@ let brotliSize = require('brotli-size');
     '$root',
     '$range',
     '$truncate',
+    '$screen',
     '$scroll',
     '$dbg',
 ]).forEach(package => {
