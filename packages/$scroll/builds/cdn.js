@@ -1,5 +1,5 @@
 import Scroll from '../src/index'
 
-document.addEventListener('alpine:initializing', () => {
+document.addEventListener('alpine:init', () => {
     Scroll(window.Alpine)
 })
