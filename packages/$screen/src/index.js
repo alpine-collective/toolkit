@@ -1,6 +1,6 @@
 export default function (Alpine) {
     // Create reactive data context
-    let data = Alpine.reactive({screensize: window.innerWidth})
+    const data = Alpine.reactive({ screensize: window.innerWidth })
 
     // Configuration
     const defaultBreakpoints = {
@@ -22,20 +22,17 @@ export default function (Alpine) {
     // use debounce to minimize the update
     window.addEventListener('resize', () => {
         clearTimeout(update)
-        update = setTimeout(() => data.screensize = window.innerWidth, 150)
+        update = setTimeout(() => { data.screensize = window.innerWidth }, 150)
     })
 
-    Alpine.magic("screen", el => (breakpoint) => {
-        let width = data.screensize
+    Alpine.magic('screen', el => (breakpoint) => {
+        const width = data.screensize
 
         if (Number.isInteger(breakpoint)) return breakpoint <= width
 
         // Check if breakpoint exists
         if (breakpoints[breakpoint] === undefined) {
-            throw Error(
-                'Undefined $screen property: ' + breakpoint
-                + '. Supported properties: ' + Object.keys(breakpoints).join(', ')
-            )
+            throw Error('Undefined $screen property: ' + breakpoint + '. Supported properties: ' + Object.keys(breakpoints).join(', '))
         }
 
         return breakpoints[breakpoint] <= width

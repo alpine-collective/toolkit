@@ -12,6 +12,7 @@
         "eslint-plugin-node": "^11.1.0",
         "eslint-plugin-promise": "^4.3.1",
         "eslint-plugin-standard": "^4.1.0",
+        "husky": "^7.0.1",
         "lint-staged": "^10.5.4"
     },
     "scripts": {
@@ -19,5 +20,15 @@
         "watch": "node ./scripts/build.js --watch",
         "lint": "eslint .",
         "lint-fix": "eslint . --fix"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.js": [
+            "eslint --fix"
+        ]
     }
 }
