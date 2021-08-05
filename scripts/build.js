@@ -9,6 +9,8 @@ const pkgs = [
     '$screen',
     '$scroll',
     '$dbg',
+    '$debounce',
+    '$throttle',
 ]
 
 pkgs.forEach((pkg) => {

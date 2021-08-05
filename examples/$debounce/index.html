@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Alpine.js Toolkit - $debounce</title>
+    <script type="module">
+        import Debounce from '/packages/$debounce/dist/module.esm.js'
+
+        document.addEventListener('alpine:initializing', () => {
+            Debounce(window.Alpine)
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine-next/packages/alpinejs/dist/cdn.min.js" defer></script>
+	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center justify-center m-24">
+
+    <div class="mb-4 font-bold" x-data>
+        <button class="mb-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" @click="$debounce(() => console.log('foo'), 1000)">Test</button>
+
+        <button class="mb-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" @click="$debounce(() => console.log('foo'), 1000, true)">Test (immediate = true)</button>
+    </div>
+</body>
