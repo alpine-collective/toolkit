@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "author": "Alpine Collective",
     "license": "MIT",
-    "description": "Run a function every n milliseconds in AlpineJs. Optionally start and stop the timer.",
+    "description": "A magic helper to run a function every n milliseconds in Alpine.Js.",
     "browser": "dist/cdn.min.js",
     "main": "dist/module.cjs.js",
     "module": "dist/module.esm.js",

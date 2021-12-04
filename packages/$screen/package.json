@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "author": "Alpine Collective",
     "license": "MIT",
-    "description": "Alpine magic helper to detect if the current browser width is equal or greater than a given breakpoint.",
+    "description": "A magic helper to detect if the current browser width is equal or greater than a given breakpoint in Alpine.Js.",
     "browser": "dist/cdn.min.js",
     "main": "dist/module.cjs.js",
     "module": "dist/module.esm.js",

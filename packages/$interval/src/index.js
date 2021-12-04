@@ -32,7 +32,7 @@ export default function (Alpine) {
             }
 
             Alpine.effect(() => {
-                if (this.autoIntervalTest) {
+                if (!this.hasOwnProperty('autoIntervalTest') || this.autoIntervalTest) {
                     forceInterval ? loop() : requestAnimationFrame(loop)
                 } else {
                     clearTimeout(autoIntervalLoop)

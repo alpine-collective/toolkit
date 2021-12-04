@@ -6,12 +6,23 @@ A set of directives and magic properties for Alpine.js.
 
 This package provides the following directives and helpers:
 
+| Helper | Description |
+| --- | --- |
+| [$dbg](https://github.com/alpine-collective/toolkit/packages/$dbg/README.md) | A magic helper to assist in debugging Alpine.js components. |
+| [$interval](https://github.com/alpine-collective/toolkit/packages/$interval/README.md) | A magic helper to run a function every n milliseconds in Alpine.Js. |
+| [$range](https://github.com/alpine-collective/toolkit/packages/$range/README.md) | A magic helper to generate an array containing a range of elements in Alpine.js. |
+| [$screen](https://github.com/alpine-collective/toolkit/packages/$screen/README.md) | A magic helper to detect if the current browser width is equal or greater than a given breakpoint in Alpine.Js. |
+| [$scroll](https://github.com/alpine-collective/toolkit/packages/$scroll/README.md) | A magic helper to generate to scroll the viewport in Alpine.Js |
+| [$truncate](https://github.com/alpine-collective/toolkit/packages/$truncate/README.md) | A magic helper to truncate a string in Alpine.js. |
+
+Each helper can also be used independently.
+
 ## Installation
 
 Include the following `<script>` tag in the `<head>` of your document, **before** Alpine:
 
 ```html
-<script src="#" defer></script>
+<script src="https://unpkg.com/@alpine-collective/toolkit@1.0.0/dist/cdn.min.js" defer></script>
 ```
 
 ### NPM

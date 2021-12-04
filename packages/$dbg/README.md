@@ -1,9 +1,9 @@
 # $dbg
 
-A magic function to assist in debugging Alpine.js components.
+A magic helper to assist in debugging Alpine.js components.
 
 ## Usage
-The function automatically unwraps the alpine properties and prints them to the browser console.
+The helper automatically unwraps the alpine properties and prints them to the browser console.
 
 ```html
 <div x-data="{ foo: 'bar', baz: { bob: 'qux' } }">
