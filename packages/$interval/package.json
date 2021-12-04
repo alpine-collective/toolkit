@@ -1,9 +1,9 @@
 {
-    "name": "@alpine-collective/toolkit-screen",
+    "name": "@alpine-collective/toolkit-interval",
     "version": "1.0.0",
     "author": "Alpine Collective",
     "license": "MIT",
-    "description": "Alpine magic helper to detect if the current browser width is equal or greater than a given breakpoint.",
+    "description": "Run a function every n milliseconds in AlpineJs. Optionally start and stop the timer.",
     "browser": "dist/cdn.min.js",
     "main": "dist/module.cjs.js",
     "module": "dist/module.esm.js",

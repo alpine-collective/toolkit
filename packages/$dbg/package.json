@@ -4,6 +4,7 @@
     "author": "Alpine Collective",
     "license": "MIT",
     "description": "A magic function to assist in debugging Alpine.js components.",
+    "browser": "dist/cdn.min.js",
     "main": "dist/module.cjs.js",
     "module": "dist/module.esm.js",
     "unpkg": "dist/cdn.min.js",
