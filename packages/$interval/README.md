@@ -1,5 +1,8 @@
 # $interval
 
+[![GitHub tag (latest by date)](https://img.shields.io/npm/v/@alpine-collective/toolkit-interval)](https://www.npmjs.com/package/@alpine-collective/toolkit-interval)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/@alpine-collective/toolkit-interval?color=#0F0)](https://bundlephobia.com/result?p=@alpine-collective/toolkit-interval)
+
 A magic helper to run a function every n milliseconds in Alpine.Js.
 
 ## Usage
@@ -26,6 +29,10 @@ It's possible to use a config object as a second parameter to specify additional
 If the component defines a property called `autoIntervalTest`, the function will only be called when the said property is set to a truthy value.
 
 ## Installation
+
+This helper is part of `alpine-collective/toolkit`. If you have already installed the main library, you won't need to do anything else. If you desire to install the helper as a standalone packacage, follow the steps below.
+
+### CDN
 
 Include the following `<script>` tag in the `<head>` of your document, **before** Alpine:
 

@@ -1,6 +1,9 @@
-# Toolkit
+# Alpine toolkit
 
-A set of directives and magic properties for Alpine.js.
+[![GitHub tag (latest by date)](https://img.shields.io/npm/v/@alpine-collective/toolkit)](https://www.npmjs.com/package/@alpine-collective/toolkit)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/@alpine-collective/toolkit?color=#0F0)](https://bundlephobia.com/result?p=@alpine-collective/toolkit)
+
+A set of directives and magic properties for Alpine.js V3.
 
 ## About
 

@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alpine.js Toolkit - $truncate</title>
-    <script type="module">
-        import Truncate from '/packages/$truncate/dist/module.esm.js'
-
-        document.addEventListener('alpine:initializing', () => {
-            Truncate(window.Alpine)
-        })
-    </script>
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine-next/packages/alpinejs/dist/cdn.min.js" defer></script>
-	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script defer src="/packages/$truncate/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body class="flex flex-col items-center justify-center m-24">

@@ -5,19 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alpine.js Toolkit - $dbg</title>
-    <script type="module">
-        import Dbg from '/packages/$dbg/dist/module.esm.js'
-
-        document.addEventListener('alpine:initializing', () => {
-            Dbg(window.Alpine)
-        })
-    </script>
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine-next/packages/alpinejs/dist/cdn.min.js" defer></script>
+    <script defer src="/packages/$dbg/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <div x-data="{ name: 'Ryan', user: { name: 'Example' } }">
-        <button @click="console.log({ name, user })">Without <code>$dbg</code></button>
-        <button @click="$dbg(name, user)">With <code>$dbg</code></button>
+<body class="flex flex-col items-center justify-center m-24">
+    <p class="mb-4 font-bold">When printing Alpine object in dev console, you'll notice that, when they are not simple primitive types, they are shown as Proxy object. Proxy are special javascript objects used by Alpine to offer reactivity but they can confuse people. Open the dev console and try to click the 2 buttons below to see the difference</p>
+    <div x-data="{ name: 'Ryan', user: { name: 'Example' }, list: [{foo: 'foo'}, 'bar'] }">
+        <button @click="console.log(name, user, list)" class="mb-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" >Without <code>$dbg</code></button>
+        <button @click="$dbg(name, user, list)" class="mb-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" >With <code>$dbg</code></button>
     </div>
+    <pre class="bg-grey-400">
+        &lt;div x-data="{ name: 'Ryan', user: { name: 'Example' }, list: [{foo: 'foo'}, 'bar'] }"&gt;
+            &lt;button @click="console.log(name, user, list)"&gt;Without $dbg&lt;/button&gt;
+            &lt;button @click="$dbg(name, user, list)"&gt;With $dbg&lt;/button&gt;
+        &lt;/div&gt;
+    </pre>
 </body>
 </html>

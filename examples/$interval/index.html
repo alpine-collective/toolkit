@@ -5,30 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alpine.js Toolkit - $interval</title>
-    <script type="module">
-        import Interval from '/packages/$interval/dist/module.esm.js'
-
-        document.addEventListener('alpine:initializing', () => {
-            Interval(window.Alpine)
-        })
-    </script>
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine-next/packages/alpinejs/dist/cdn.min.js" defer></script>
+    <script defer src="/packages/$interval/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body class="flex flex-col items-center justify-center m-24">
-    <p class="mb-4 font-bold">Pressing the button on the left will start/stop the interval</p>
+    <p class="mb-4 font-bold">Simple example: the yellow block will toggle every 0.5 seconds</p>
     <div
-        x-data="{
-            timer: 500,
-            autoIntervalTest: true, // optional to start/stop the timer
-            funtionToRun: function() {
-                this.$refs.block.classList.toggle('bg-yellow-400')
-            }
-        }"
-        x-init="$interval(funtionToRun, timer)"
+        x-data
+        x-init="$interval(
+            () => $refs.block.classList.toggle('bg-yellow-400'),
+            500
+        )"
+        class="inline-flex space-x-2 mb-12">
+        <span x-ref="block" class="w-10 h-10 block"></span>
+    </div>
+
+    <p class="mb-4 font-bold">Advanced example: the yellow block will toggle every 0.5 seconds but it will start after 10 seconds</p>
+    <div
+        x-data
+        x-init="$interval(
+            () => $refs.block.classList.toggle('bg-yellow-400'),
+            {timer: 500, delay: 10000}
+        )"
+        class="inline-flex space-x-2 mb-12">
+        <span x-ref="block" class="w-10 h-10 block"></span>
+    </div>
+
+    <p class="mb-4 font-bold">Start/Stop: Pressing the button on the left will start/stop the interval</p>
+    <div
+        x-data="{ autoIntervalTest: true }"
+        x-init="$interval(
+            () => $refs.block.classList.toggle('bg-yellow-400'),
+            500
+        )"
         @click="autoIntervalTest = !autoIntervalTest"
-        class="inline-flex space-x-2"
+        class="inline-flex space-x-2 mb-4"
         >
         <button x-text="autoIntervalTest ? 'on' : 'off'" class="w-10 h-10 block bg-gray-300 flex items-center justify-center"></button>
         <span x-ref="block" class="w-10 h-10 block"></span>

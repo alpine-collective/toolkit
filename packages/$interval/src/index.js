@@ -24,15 +24,19 @@ export default function (Alpine) {
 
             let autoIntervalLoop = null
 
+            let firstTime = true
+
             const loop = () => {
+                let next = firstTime ? timer+delay : timer
+                firstTime = false
                 autoIntervalLoop = setTimeout(() => {
                     parameters[0].call(this)
                     forceInterval ? loop() : requestAnimationFrame(loop)
-                }, timer)
+                }, next)
             }
 
             Alpine.effect(() => {
-                if (!this.hasOwnProperty('autoIntervalTest') || this.autoIntervalTest) {
+                if (this.autoIntervalTest == undefined || this.autoIntervalTest) {
                     forceInterval ? loop() : requestAnimationFrame(loop)
                 } else {
                     clearTimeout(autoIntervalLoop)
