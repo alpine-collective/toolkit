@@ -1,7 +1,7 @@
 # $truncate
 
-[![GitHub tag (latest by date)](https://img.shields.io/npm/v/@alpine-collective/toolkit-interval)](https://www.npmjs.com/package/@alpine-collective/toolkit-interval)
-[![npm bundle size](https://img.shields.io/bundlephobia/minzip/@alpine-collective/toolkit-interval?color=#0F0)](https://bundlephobia.com/result?p=@alpine-collective/toolkit-interval)
+[![GitHub tag (latest by date)](https://img.shields.io/npm/v/@alpine-collective/toolkit-truncate)](https://www.npmjs.com/package/@alpine-collective/toolkit-truncate)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/@alpine-collective/toolkit-truncate?color=#0F0)](https://bundlephobia.com/result?p=@alpine-collective/toolkit-truncate)
 
 A magic helper to truncate a string in Alpine.js.
 

@@ -1,7 +1,7 @@
-# $interval
+# $range
 
-[![GitHub tag (latest by date)](https://img.shields.io/npm/v/@alpine-collective/toolkit-interval)](https://www.npmjs.com/package/@alpine-collective/toolkit-interval)
-[![npm bundle size](https://img.shields.io/bundlephobia/minzip/@alpine-collective/toolkit-interval?color=#0F0)](https://bundlephobia.com/result?p=@alpine-collective/toolkit-interval)
+[![GitHub tag (latest by date)](https://img.shields.io/npm/v/@alpine-collective/toolkit-range)](https://www.npmjs.com/package/@alpine-collective/toolkit-range)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/@alpine-collective/toolkit-range?color=#0F0)](https://bundlephobia.com/result?p=@alpine-collective/toolkit-range)
 
 A magic helper to generate an array containing a range of elements in Alpine.js.
 
