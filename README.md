@@ -11,12 +11,12 @@ This package provides the following directives and helpers:
 
 | Helper | Description |
 | --- | --- |
-| [$dbg](https://github.com/alpine-collective/toolkit/packages/$dbg/README.md) | A magic helper to assist in debugging Alpine.js components. |
-| [$interval](https://github.com/alpine-collective/toolkit/packages/$interval/README.md) | A magic helper to run a function every n milliseconds in Alpine.Js. |
-| [$range](https://github.com/alpine-collective/toolkit/packages/$range/README.md) | A magic helper to generate an array containing a range of elements in Alpine.js. |
-| [$screen](https://github.com/alpine-collective/toolkit/packages/$screen/README.md) | A magic helper to detect if the current browser width is equal or greater than a given breakpoint in Alpine.Js. |
-| [$scroll](https://github.com/alpine-collective/toolkit/packages/$scroll/README.md) | A magic helper to generate to scroll the viewport in Alpine.Js |
-| [$truncate](https://github.com/alpine-collective/toolkit/packages/$truncate/README.md) | A magic helper to truncate a string in Alpine.js. |
+| [$dbg](https://github.com/alpine-collective/toolkit/packages/%24dbg/README.md) | A magic helper to assist in debugging Alpine.js components. |
+| [$interval](https://github.com/alpine-collective/toolkit/packages/%24interval/README.md) | A magic helper to run a function every n milliseconds in Alpine.Js. |
+| [$range](https://github.com/alpine-collective/toolkit/packages/%24range/README.md) | A magic helper to generate an array containing a range of elements in Alpine.js. |
+| [$screen](https://github.com/alpine-collective/toolkit/packages/%24screen/README.md) | A magic helper to detect if the current browser width is equal or greater than a given breakpoint in Alpine.Js. |
+| [$scroll](https://github.com/alpine-collective/toolkit/packages/%24scroll/README.md) | A magic helper to generate to scroll the viewport in Alpine.Js |
+| [$truncate](https://github.com/alpine-collective/toolkit/packages/%24truncate/README.md) | A magic helper to truncate a string in Alpine.js. |
 
 Each helper can also be used independently.
 
