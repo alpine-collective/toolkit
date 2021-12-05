@@ -3,12 +3,12 @@ const brotliSize = require('brotli-size')
 
 const pkgs = [
     'toolkit',
-    '$root',
     '$range',
     '$truncate',
     '$screen',
     '$scroll',
     '$dbg',
+    '$interval',
 ]
 
 pkgs.forEach((pkg) => {

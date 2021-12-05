@@ -1,5 +1,5 @@
-import screen from '../src/index.js'
+import Screen from '../src/index.js'
 
 document.addEventListener('alpine:init', () => {
-    window.Alpine.plugin(screen)
+    window.Alpine.plugin(Screen)
 })

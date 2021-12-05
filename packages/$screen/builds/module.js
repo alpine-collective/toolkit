@@ -1,3 +1,3 @@
-import screen from '../src/index.js'
+import Screen from '../src/index.js'
 
-export default screen
+export default Screen
