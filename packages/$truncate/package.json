@@ -1,6 +1,6 @@
 {
     "name": "@alpine-collective/toolkit-truncate",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Alpine Collective",
     "license": "MIT",
     "description": "Truncate a string in Alpine.js.",

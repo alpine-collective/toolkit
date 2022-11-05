@@ -13,7 +13,7 @@ Coming soon
 Include the following `<script>` tag in the `<head>` of your document, **before** Alpine:
 
 ```html
-<script src="https://unpkg.com/@alpine-collective/toolkit-screen@1.0.0/dist/cdn.min.js" defer></script>
+<script src="https://unpkg.com/@alpine-collective/toolkit-screen@1.0.1/dist/cdn.min.js" defer></script>
 ```
 
 ### NPM

@@ -17,7 +17,10 @@ This helper is part of `alpine-collective/toolkit`. If you have already installe
 Include the following `<script>` tag in the `<head>` of your document, **before** Alpine:
 
 ```html
-<script src="https://unpkg.com/@alpine-collective/toolkit-range@1.0.0/dist/cdn.min.js" defer></script>
+<script src="https://unpkg.com/@alpine-collective/toolkit-range@1.0.1/dist/cdn.min.js" defer></script>
+```
+```html
+<script src="https://cdn.jsdelivr.net/npm/@alpine-collective/toolkit-range@1.0.1/dist/cdn.min.js" defer></script>
 ```
 
 ### NPM

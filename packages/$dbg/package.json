@@ -1,6 +1,6 @@
 {
     "name": "@alpine-collective/toolkit-dbg",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Alpine Collective",
     "license": "MIT",
     "description": "A magic helper to assist in debugging Alpine.js components.",
