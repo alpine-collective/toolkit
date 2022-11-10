@@ -1,6 +1,6 @@
 {
     "name": "@alpine-collective/toolkit",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Alpine Collective",
     "license": "MIT",
     "description": "A set of directives and magic properties for Alpine.js V3.",
