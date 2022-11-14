@@ -1,10 +1,9 @@
 {
     "name": "@alpine-collective/toolkit",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "author": "Alpine Collective",
     "license": "MIT",
     "description": "A set of directives and magic properties for Alpine.js V3.",
-    "browser": "dist/cdn.min.js",
     "main": "dist/module.cjs.js",
     "module": "dist/module.esm.js",
     "unpkg": "dist/cdn.min.js",
