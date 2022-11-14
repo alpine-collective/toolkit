@@ -25,11 +25,11 @@ Each helper can also be used independently.
 Include the following `<script>` tag in the `<head>` of your document, **before** Alpine:
 
 ```html
-<script src="https://unpkg.com/@alpine-collective/toolkit@1.0.1/dist/cdn.min.js" defer></script>
+<script src="https://unpkg.com/@alpine-collective/toolkit@1.0.2/dist/cdn.min.js" defer></script>
 ```
 or
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@alpine-collective/toolkit@1.0.1/dist/cdn.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@alpine-collective/toolkit@1.0.2/dist/cdn.min.js" defer></script>
 ```
 
 ### NPM

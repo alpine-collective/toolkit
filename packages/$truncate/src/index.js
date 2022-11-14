@@ -1,4 +1,22 @@
 export default function (Alpine) {
+    const appendEllipsis = (string, parameters) => {
+        if (parameters[0].length <= string.length) return string
+
+        let ellipsis = '…'
+
+        // 3rd parameter is an optional '…' override (soon to be deprecated)
+        if (typeof parameters[2] !== 'undefined') {
+            ellipsis = parameters[2]
+        }
+
+        // If the second parameter is an object
+        if (Object.prototype.hasOwnProperty.call(parameters[1], 'ellipsis')) {
+            ellipsis = parameters[1].ellipsis
+        }
+
+        return string + ellipsis
+    }
+
     Alpine.magic('truncate', () => {
         return function (...parameters) {
             if (typeof parameters[0] !== 'string') return parameters[0]
@@ -23,22 +41,4 @@ export default function (Alpine) {
             return parameters[0]
         }
     })
-}
-
-const appendEllipsis = (string, parameters) => {
-    if (parameters[0].length <= string.length) return string
-
-    let ellipsis = '…'
-
-    // 3rd parameter is an optional '…' override (soon to be deprecated)
-    if (typeof parameters[2] !== 'undefined') {
-        ellipsis = parameters[2]
-    }
-
-    // If the second parameter is an object
-    if (Object.prototype.hasOwnProperty.call(parameters[1], 'ellipsis')) {
-        ellipsis = parameters[1].ellipsis
-    }
-
-    return string + ellipsis
 }
